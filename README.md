@@ -82,6 +82,7 @@ This repository provides a ready-to-use shell Docker environment that combines t
    - Set up the workspace directory structure
    - Create `.my.cnf` for easy database access from within containers
    - Create `app/public/` directory with a default `index.php` file
+   - Set up `app/.vscode/settings.json` with SQLTools database connection for VS Code
 
 3. Build and start the containers:
    ```bash

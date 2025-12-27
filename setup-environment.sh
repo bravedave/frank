@@ -25,6 +25,29 @@ mkdir -p workspace/root
 # Create app/public directory if it doesn't exist
 mkdir -p app/public
 
+# Create app/.vscode directory if it doesn't exist
+mkdir -p app/.vscode
+
+# Create .vscode/settings.json for SQLTools extension
+cat > app/.vscode/settings.json << EOF
+{
+    "sqltools.useNodeRuntime": false,
+    "sqltools.connections": [
+        {
+            "driver": "MariaDB",
+            "name": "CMSX Database",
+            "database": "cmsx",
+            "username": "cmsx_user",
+            "password": "${MYSQL_PASSWORD}",
+            "server": "mariadb",
+            "port": 3306
+        }
+    ]
+}
+EOF
+
+echo "✅ Created app/.vscode/settings.json with database connection settings"
+
 # Create default index.php file
 cat > app/public/index.php << 'EOF'
 <?php
