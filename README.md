@@ -13,7 +13,7 @@ A comprehensive Docker development environment featuring MariaDB and FrankenPHP 
 ### Option 2: Git Clone
 ```bash
 # Clone the repository
-git clone <repository-url> your-project-name
+git clone https://github.com/bravedave/frank your-project-name
 cd your-project-name
 
 # Remove git history to start fresh
