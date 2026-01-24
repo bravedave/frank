@@ -9,7 +9,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # 
 # # add additional extensions here:
 RUN install-php-extensions \
-	mysqli
+	mysqli pdo_mysql
 
 # gd \
 # intl \
