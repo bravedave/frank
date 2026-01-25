@@ -1,5 +1,7 @@
 # How I AI
 
+Not claiming the original idea — just making it work for me.
+
 There’s a podcast called *How I AI*. I like the phrase and the PodCast — it’s memorable — but I’m not part of that and this isn’t a reference to it. This is simply how *I* use AI in my own development environment.
 
 I’m a coder. PHP, Composer. I like Symfony and Laravel, but I prefer my own framework—it suits how I think. I work in VS Code with GitHub Copilot.
