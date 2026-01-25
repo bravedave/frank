@@ -2,6 +2,10 @@
 
 A comprehensive Docker development environment featuring MariaDB and FrankenPHP for rapid PHP application development.
 
+This project is built for an opinionated AI-first workflow.
+
+👉 Read **[HOW_I_AI.md](./HOW_I_AI.md)** before diving into the code.
+
 ## Installation
 
 ### Option 1: Download ZIP (Recommended)

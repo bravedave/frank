@@ -62,6 +62,9 @@ EOF
 
 echo "✅ Created app/public/index.php with default content"
 
+cp delta.example.md app/delta.md
+echo "✅ Copied delta.example.md to app/delta.md"
+
 # Create .my.cnf file for easy MySQL access
 cat > workspace/root/.my.cnf << EOF
 [client]
