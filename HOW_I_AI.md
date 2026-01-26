@@ -65,7 +65,7 @@ rm -rf .git
 ./setup-environment.sh
 
 # Start the container
-docker compose up -d
+docker compose up -d --build
 ```
 
 Docker still feels like cheating. Dev environment: done.
