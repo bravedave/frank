@@ -25,6 +25,9 @@ mkdir -p workspace/root
 # Create app/public directory if it doesn't exist
 mkdir -p app/public
 
+# Create app/src/data directory if it doesn't exist
+mkdir -p app/src/data
+
 # Create app/.vscode directory if it doesn't exist
 mkdir -p app/.vscode
 
@@ -49,7 +52,7 @@ EOF
 echo "✅ Created app/.vscode/settings.json with database connection settings"
 
 # Create default index.php file
-cat > app/public/index.php << 'EOF'
+cat > app/public/index.php << EOF
 <?php
 /*
  * Copyright (c) 2025 David Bray
@@ -58,6 +61,25 @@ cat > app/public/index.php << 'EOF'
 
 print '<div class="center"><br><h1>hello world from frank/index.php</h1><br></div>';
 phpinfo(INFO_VARIABLES);
+EOF
+
+# Create app/src/data/db.json file
+cat > app/src/data/db.json << EOF
+{
+  "db_type": "mariadb",
+  "db_host": "mariadb",
+  "db_name": "cmsx",
+  "db_user": "cmsx_user",
+  "db_pass": "${MYSQL_PASSWORD}"
+}
+EOF
+
+# Create app/src/data/defaults.json file
+cat > app/src/data/defaults.json << EOF
+{
+  "db_type": "mysql",
+  "db_cache": "APC"
+}
 EOF
 
 echo "✅ Created app/public/index.php with default content"
