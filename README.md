@@ -41,7 +41,7 @@ This repository provides a ready-to-use shell Docker environment that combines t
 - Latest MariaDB image with persistent data storage
 - Custom server configuration via `my.server.cnf`
 - Environment-based configuration for database credentials
-- Persistent data volumes mapped to `./workspace/mariadb`
+- Docker named volume for persistent data storage
 
 ### FrankenPHP Application Server
 - Built on the official `dunglas/frankenphp` image
@@ -57,7 +57,6 @@ This repository provides a ready-to-use shell Docker environment that combines t
 ├── app/                    # Your application development folder
 │   └── public/            # Publicly exposed web files
 ├── workspace/             # Persistent data and configuration
-│   ├── mariadb/          # MariaDB data directory
 │   └── root/             # Container root directory mapping
 ├── Caddyfile.d/          # Custom Caddy server configuration
 ├── docker-compose.yaml   # Docker Compose configuration
@@ -70,7 +69,7 @@ This repository provides a ready-to-use shell Docker environment that combines t
 - **Development-Ready**: The `app/` folder is mapped for live development - changes reflect immediately
 - **Web Root**: The `public/` directory serves as your publicly accessible web folder
 - **Database Integration**: MariaDB connector pre-installed and ready to use
-- **Persistent Storage**: Database and configuration files persist across container restarts
+- **Persistent Storage**: Database uses Docker named volumes to persist data across container restarts
 - **Modern Standards**: HTTP/2, HTTP/3, and HTTPS support out of the box
 
 ## Getting Started
