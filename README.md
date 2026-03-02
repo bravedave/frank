@@ -91,7 +91,7 @@ This repository provides a ready-to-use shell Docker environment that combines t
    ```bash
    docker compose up -d --build
    ```
-4. Access your application at `http://app.localhost` or `https://app.localhost`
+4. Access your application at `http://localhost:8180`
 
 ## Environment Configuration
 

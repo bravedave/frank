@@ -1,4 +1,8 @@
-app.localhost {
+{
+	auto_https off
+}
+
+:80 {
 	root * /app/public
 
 	rewrite * /_mvp.php
