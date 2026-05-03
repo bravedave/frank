@@ -83,15 +83,16 @@ I’m on the smallest GitHub subscription. There *is* a free tier, but you’ll 
 
 ### 3. Observe the setup
 
->#### Tip 
->- open the container in VS Code (requires the extentions above)
->- and switch to the folder `/app`
+>#### Tip
+>
+>* open the container in VS Code (requires the extentions above)
+>* and switch to the folder `/app`
 
 Inside the container you’ll find:
 
 1. `delta.md`
 2. `public/index.php`, available at
-   `https://app.localhost/`
+   `http://localhost:8180`
 
 ### 4. Execute the change
 
