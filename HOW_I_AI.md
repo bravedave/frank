@@ -83,6 +83,10 @@ I’m on the smallest GitHub subscription. There *is* a free tier, but you’ll 
 
 ### 3. Observe the setup
 
+>#### Tip 
+>- open the container in VS Code (requires the extentions above)
+>- and switch to the folder `/app`
+
 Inside the container you’ll find:
 
 1. `delta.md`
