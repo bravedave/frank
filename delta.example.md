@@ -15,7 +15,7 @@
 --- This is a bravedave/dvc application ---
 - With exception
    - do not use the `vendor/bin/dvc serve`, it is not necessary
-   - the frankenphp makes the application avaulable at https://app.localhost/
+   - the frankenphp makes the application avaulable at http://localhost:8180
 
 # Basic todo application
 
