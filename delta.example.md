@@ -3,7 +3,7 @@
 - The is a bravedave/frank container - https://github.com/bravedave/frank
   - FrankenPHP is running
   - Composer is installed
-  - The file public/index.php serves at https://app.localhost/
+  - The file public/index.php serves at http://localhost:8180
 
 ## Initial Tasks
 
