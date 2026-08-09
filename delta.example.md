@@ -38,6 +38,10 @@ As a user, I want to have a basic todo list for my home screen
 - Complete the Initial Tasks outline above
    - note that this will create a .github/copilot-instructions.md - ensure it is read
 - Create the todo application
-- Create a README.md - remove the default README.md created by 
+- Create a README.md - remove the default README.md created by the framework
 - Create an on topic readme describing this project
+  - include a link to the todo module, which will have been created at /todo
 - Add an MIT license
+- Update this document
+  - tick off the items completed
+  - follow .github/prompts/delta-implement-change.prompt.md principals to make this delta as complete
